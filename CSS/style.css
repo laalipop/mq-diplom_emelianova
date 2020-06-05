@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Open Sans", Andale Mono, monospace;
+  }
+
+.header {
+    background-color: #000000;
+    background-image: url("../images/football_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    background-color: #0a0e34;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.header-container {
+    position: relative;
+    z-index: 1;
+}
+
+.main-logo-header {
+    text-align: center;
+    padding: 65px 0;
+}
+
+.main-logo-text {
+    width: 191px;
+    height: 52px;
+}
+
+.header-title {
+    box-sizing: border-box;
+    padding-top: 230px;
+    padding-bottom: 220px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 1530px;
+    margin: 0 auto;
+    
+
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+
+
+.download-app {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+    
+}
+
+.download-app-store, .download-app-googleplay {
+    width: 310px;
+    height: 77px;
+    background-color: #5e42b0;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    
+}
+
+/*.download-app-store .download-preview {
+    padding: 11px 25px 11px 40px;
+}
+
+.download-app-googleplay .download-preview {
+    padding: 13px 30px 13px 57px;
+}
+*/
+.app-store-svg {
+    width: 42px;
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 40px;
+
+}
+
+.app-googleplay-svg {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 60px;
+}
+
+
+.download-description {
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.download-description-one {
+    font-weight: 400;
+    display: block;
+}
+
+.download-description-two {
+    font-weight: 700;
+    display: block;
+}
+
+.download-app-googleplay {
+    margin-left: 50px;
+}
+
+/* ________________________________________________________________________________________*/
+.one-part-sections {
+    position: relative;
+}
+
+.one-part-sections::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/footballer_566.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.section-description {
+    margin-top: 110px;
+    padding-right: 15px;
+    
+
+}
+
+.section-title {
+    font-size: 80px;
+    font-weight: 700;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.article {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.section-part-athlets .article:nth-child(2n+3)::after {
+    content: "";
+    position: absolute;
+    background-color: #5e42b0;
+    opacity: 0.05;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.section-part-athlets .article:nth-child(2n+4)::after {
+    content: "";
+    position: absolute;
+    background-color: #5e42b0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.section-part-players .article:nth-child(2n+3)::after {
+    content: "";
+    position: absolute;
+    background-color: #0a0e34;
+    opacity: 0.03;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.section-part-players .article:nth-child(2n+4)::after {
+    content: "";
+    position: absolute;
+    background-color: #0a0e34;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.article-container {
+    position: relative;
+    z-index: 3;
+}
+
+.article-header {
+    display: flex;
+    align-items: center;
+}
+
+.article-nomber {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #000000;
+    padding-right: 12px;
+}
+
+.article-nomber::after {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 5px;
+    background-color: #5e42b0;
+    border-radius: 50px;
+}
+
+/*.article-nomber:last-child::after {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+не понимаю, почему такая выборка не работает? */
+
+
+.article-title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #c1c1c1;
+    
+}
+
+.article-content {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+/*.article-content:first-child {
+    color: #ffffff;
+}
+почему не работает такая выборка? пробовала разные варианты */
+
+
+
+/* _____footer___________________________________________________________________________________*/
+
+.footer {
+    background-color: #6d6b6b;
+    background-image: url("../images/game_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    background-color: #0a0e34;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-download-bottom {
+    padding-top: 230px;
+    padding-bottom: 150px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 85px; 
+    padding: 20px 13px;
+    position: relative;
+    background-color: #5e42b0;  
+    border-radius: 25px; 
+}
+
+
+
+.main-logo-footer {
+    text-align: center;
+    padding-bottom: 50px;
+}

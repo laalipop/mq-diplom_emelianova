@@ -213,14 +213,14 @@ display: block;
     margin-bottom: 30px;
 }
 
-.article-nomber {
+.article-number {
     font-size: 18px;
     font-weight: 700;
     color: #000000;
     padding-right: 12px;
 }
 
-.article-nomber::after {
+.article-number::after {
     content: "";
     display: block;
     width: 20px;
@@ -230,7 +230,7 @@ display: block;
 }
 
 /*  не работает */
-.article-nomber:nth-child(3)::after {
+.article-number:nth-child(3)::after {
     content: "";
     display: block;
     width: 20px;
@@ -312,7 +312,7 @@ p {
     position: relative;
 }
 
-.section-nomber-line {
+.section-number-line {
     font-size: 24px;
     line-height: 34px;
     font-weight: 700;
@@ -330,7 +330,7 @@ p {
     bottom: 0; 
 }
 
-.section-nomber-line::after {
+.section-number-line::after {
     content: "";
     display: block;
     text-align: center;
@@ -340,7 +340,6 @@ p {
     background-color: #ffffff;
     border-radius: 2.0px;
 }
-
  
  .section-text {    
     display: flex;

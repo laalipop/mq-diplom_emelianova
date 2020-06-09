@@ -202,7 +202,9 @@ body {
     
 }
 
-
+.section-picture {
+    background-color: #ffffff;
+}
 
 .athlets .section-picture {
     content: "";

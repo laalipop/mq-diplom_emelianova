@@ -17,18 +17,17 @@ body {
     font-family: "Open Sans", Andale Mono, monospace;
   }
 
+ /* .header-picture {
+    position: relative;
+    object-fit: cover;
+  }*/
+
 .header {
     background-color: #000000;
     background-image: url("../images/football_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
-
-@media (min-width: 768px) and (max-width:1919px) {
-    .header {
-        background-image: url("../images/football_1280.jpg");
-    }
 }
 
 .header::after {
@@ -57,19 +56,6 @@ body {
     height: 52px;
 }
 
-@media (min-width: 768px) and (max-width:1919px) {
-    
-    .main-logo-header {
-        text-align: center;
-        padding: 40px 0;
-    }
-
-    .main-logo-text {
-        width: 205px;
-        height: 56px;
-    }
-}
-
 .header-title {
     box-sizing: border-box;
     padding-top: 230px;
@@ -92,21 +78,6 @@ body {
     display: block;
 }
 
-@media (min-width: 768px) and (max-width:1919px) {
-    
-    .header-title {
-        padding: 180px 0 305px 0;
-        font-size: 64px;
-        line-height: 1.2;
-        width: 595px;
-    }
-
-    .header-title-two {
-        padding-left: 100px;
-        display: block;
-    }
-}
-
 .download-app {
     display: flex;
     justify-content: center;
@@ -119,7 +90,8 @@ body {
     color: inherit;
 }
 
-.download-description {
+.download-description {    
+    font-weight: 400;
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase; 
@@ -128,9 +100,8 @@ body {
     background-color: #5e42b0;
     border-radius: 50px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -138,56 +109,17 @@ body {
     margin-left: 50px;
 }
 
-.download-description-one {
-    font-weight: 400;
-    display: block;
-    padding-top: 10px;
-}
-
-.download-description-two {
-    font-weight: 700;
-    display: block;
-}
-
-
 .app-store-svg {
     width: 42px;
     height: 48px;
-    margin-left: 38px;
+    margin-right: 25px;
 }
 
 .app-googleplay-svg {
     width: 40px;
     height: 50px;
-    margin-left: 57px;
+    margin-right: 30px;
 }
-
-@media (min-width: 768px) and (max-width:1919px) {
-    
-    .download-app {
-        padding-bottom: 55px;    
-    }
-
-    .download-app-store, .download-app-googleplay {
-        box-shadow: 8px 14px 24px 0px #0a0e34;
-    }
-
-    .app-store-svg {
-        width: 36px;
-        height: 42px;
-        margin-right: 28px;
-        margin-left: 40px;
-    }
-
-    .app-googleplay-svg {
-        width: 41px;
-        height: 45px;
-        margin-right: 28px;
-        margin-left: 55px;
-    }
-}
-
-
 
 /* ________________________________________________________________________________________*/
 
@@ -198,25 +130,12 @@ body {
 
 .section-container {
     margin-top: 115px;
-    position: relative;
-    
+    position: relative;    
 }
 
-.section .section-picture {
+/*.section .section-picture {
     background-color: #ffffff;
-}
-
-.athlets .section-picture {
-    content: "";
-    position: absolute;
-    top: -88px;
-    right: 0;
-    bottom: 0;
-    left: 390px;
-    z-index: 2;
-}
-
-
+}*/
 
 .section-title {
     font-size: 80px;
@@ -227,53 +146,50 @@ body {
     margin-top: 0;
     margin-bottom: 50px;
 }
-
-.athlets .section-title {
-    padding-left: 1000px;
-}
-
 .article {
     padding-top: 60px;
     padding-bottom: 50px;    
     position: relative;
 }
 
-.athlets .article {
-    padding-left: 1000px;
-    padding-right: 210px;
-}
-
-@media (min-width: 768px) and (max-width:1919px) {
-    .section-part {
-        width: 768px;
-    }
-
-    .section-container {
-        margin-top: 85px;
-        position: relative;
-        overflow: hidden;
-    }
+@media (min-width: 1920px) {
 
     .athlets .section-picture {
         content: "";
         position: absolute;
-        top: 10px;
+        top: -88px;
         right: 0;
         bottom: 0;
-        left: -162px;
+        left: 390px;
+        z-index: 2;
     }
 
-    .section-title {
-        margin-bottom: 60px;
-    }
-    
     .athlets .section-title {
-        padding-left: 290px;
-    }
+    padding-left: 1000px;
+    }   
 
     .athlets .article {
-        padding-left: 290px;
-        padding-right: 33px;
+    padding-left: 1000px;
+    padding-right: 210px;
+    }
+
+    .players .section-title {
+        padding-left: 190px;
+    }
+    
+    .players .article {
+        padding-left: 190px;
+        padding-right: 985px;
+    }
+    
+    .players .section-picture {
+        content: "";
+        position: absolute;
+        top: -94px;
+        right: 0;
+        bottom: 0;
+        left: 804px;
+        z-index: 2;
     }
 
 
@@ -361,59 +277,10 @@ body {
     color: #ffffff;
 }
 
-@media (min-width: 768px) and (max-width:1919px) {
-    .article-title {
-        font-size: 32px;
-    }
-
-    .article-content {
-        font-size: 16px;
-    }
-}
-
 p {
     margin: 0;
 }
 
-.players .section-title {
-    padding-left: 190px;
-}
-
-.players .article {
-    padding-left: 190px;
-    padding-right: 985px;
-}
-
-.players .section-picture {
-    content: "";
-    position: absolute;
-    top: -94px;
-    right: 0;
-    bottom: 0;
-    left: 804px;
-    z-index: 2;
-}
-
-@media (min-width: 768px) and (max-width:1919px) {
-    
-    .players .section-title {
-        padding-left: 32px;
-    }
-    
-    .players .article {
-        padding-left: 32px;
-        padding-right: 310px;
-    }
-    
-    .players .section-picture {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 332px;
-    }
-}
 
 
 .players .articles .article:nth-child(2n+2)::after {
@@ -441,13 +308,28 @@ p {
     color: #9173e6;
 }
 
-
 /* ***************************************************************************** */
 .section {
     display: flex;
     position: relative;
 }
 
+@media (min-width: 1920px) {
+    .find-contact .section-pictures {
+        order: 3;
+    }
+    
+    .find-contact .section-number {
+            
+        position: absolute;
+        top: 211px;
+        left: -84px;
+        right: 0;
+        bottom: 0;
+    }
+
+    
+}
 
 .section-pictures {
     width: 50%;
@@ -458,8 +340,6 @@ p {
     max-width: 100%;
     display: block;
 }
-
-
 
 .section-number {
     font-size: 24px;
@@ -497,38 +377,20 @@ p {
     border-radius: 2.0px;
 }
 
-@media (min-width:1920px) {
-
-    .section {
-        display: flex;
-    }
-
-    .find-contact .section-pictures {
-        order: 3;
-    }
-
-    .find-contact .section-number {
-        
-        position: absolute;
-        top: 211px;
-        left: -84px;
-        right: 0;
-        bottom: 0;
-    }
-}
  
- .section-text {    
-    display: flex;
-    padding-left: 125px;
-    width: 50%;
-    box-sizing: border-box;
-    margin-top: 260px;
-}
 
 @media (min-width: 1920px) {    
 
     .section-text-description {
-    width: 640px;
+        width: 640px;
+    }
+
+    .section-text {    
+        display: flex;
+        padding-left: 125px;
+        width: 50%;
+        box-sizing: border-box;
+        margin-top: 260px;
     }
 }
 
@@ -553,37 +415,7 @@ p {
     margin-top: 0;
 }
 
-@media (min-width: 768px) and (max-width:1919px) {
 
-    .section {
-        display: block;
-        position: relative;
-    }
-
-    .section-number {
-        top: calc(100% - 95px);
-        left: 33px;
-        bottom: 0;
-        right: 0;
-    }
-
-    .section-pictures {
-        width: 100%;
-    }
-
-    .section-text {   
-        width: 100%; 
-        display: block;
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-bottom: 100px;
-        margin-top: 80px;
-    }
-
-    .be-active .section-text {   
-        margin-top: 90px;
-    }
-}
 
 
 /* _____footer___________________________________________________________________________________*/
@@ -614,10 +446,9 @@ p {
 
 .footer-download-bottom {
     padding-top: 230px;
-    padding-bottom: 150px;
-    display: flex;
+    padding-bottom: 150px;    
     margin: 0 auto;
-    align-items: center;
+    
     
 }
 
@@ -629,8 +460,6 @@ p {
     background-color: #5e42b0;  
     border-radius: 25px; 
 }
-
-
 
 @media (min-width: 1920px) {
 
@@ -650,7 +479,6 @@ p {
 
 }
 
-
 .footer-logo-text-one {
     font-size: 80px;
     line-height: 60px;
@@ -667,7 +495,155 @@ p {
     color: #a496ca;
 }
 
-@media (min-width: 768px) and (max-width:1919px) {
+.footer .download-app {
+    padding-bottom: 260px;;
+}
+
+
+
+.main-logo-footer {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+/*___================================================================____*/
+
+@media (min-width: 768px) and (max-width: 1919px) {
+    .header {
+        background-image: url("../images/football_1280.jpg");
+    }
+
+    .main-logo-header {
+        padding: 40px 0;
+    }
+
+    .main-logo-text {
+        width: 205px;
+        height: 56px;
+    }
+
+    .header-title {
+        padding: 180px 0 305px 0;
+        font-size: 64px;
+        line-height: 1.2;
+        width: 595px;
+    }
+
+    .header-title-two {
+        padding-left: 100px;
+        display: block;
+    }
+    .download-app {
+        padding-bottom: 55px;    
+    }
+
+    .download-app-store, .download-app-googleplay {
+        box-shadow: 8px 14px 24px 0px #0a0e34;
+    }
+
+    .app-store-svg {
+        width: 36px;
+        height: 42px;
+        margin-right: 28px;
+    }
+
+    .app-googleplay-svg {
+        width: 41px;
+        height: 45px;
+        margin-right: 28px;
+    }
+
+    .section-part {
+        width: 768px;
+    }
+
+    .section-container {
+        margin-top: 85px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .athlets .section-picture {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 0;
+        bottom: 0;
+        left: -162px;
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+    }
+    
+    .athlets .section-title {
+        padding-left: 290px;
+    }
+
+    .athlets .article {
+        padding-left: 290px;
+        padding-right: 33px;
+    }
+
+    .article-title {
+        font-size: 32px;
+    }
+
+    .article-content {
+        font-size: 16px;
+    }
+
+    .players .section-title {
+        padding-left: 32px;
+    }
+    
+    .players .article {
+        padding-left: 32px;
+        padding-right: 310px;
+    }
+    
+    .players .section-picture {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 332px;
+    }
+
+
+    
+
+    
+    .section {
+        display: block;
+        position: relative;
+    }
+
+    .section-number {
+        top: calc(100% - 95px);
+        left: 33px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .section-pictures {
+        width: 100%;
+    }
+
+    .section-text {   
+        width: 100%; 
+        display: block;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 100px;
+        margin-top: 80px;
+    }
+
+    .be-active .section-text {   
+        margin-top: 90px;
+    }
 
     .footer-download-bottom {
         padding: 125px 35px 285px;
@@ -687,21 +663,109 @@ p {
 
     .footer-logo-text-one {
         margin-bottom: 27px;
+    } 
+}
+
+@media (max-width: 767px) {
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .main-logo-header {
+        padding-bottom: 135px;
+        padding-top: 33px;
+    }
+
+    .main-logo-text {
+        width: 133px;
+        height: 36px;        
+    }
+
+    .header-title {
+        font-size: calc(8.18vw + 1.81px);
+    }
+
+    .download-app {
+        display: inline-block;
+    }
+
+    .download-description {
+        width: 280px;
+        height: 35px;
+        font-size: 0.5rem;
+        margin: 0 auto; 
+    }
+    
+    .download-description:nth-child(2) {
+        margin-top: 14px;
+    }
+
+    .app-store-svg, .app-googleplay-svg {
+        width: 20px;
+        height: 24px;
+    }
+
+    .section-title {
+        padding: 0;
+    }
+
+    .section-part {
+        width: 320px;
+          ; /*320px*/
+    }
+
+    .section-title {
+        font-size: 3.12rem;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .article {
+        padding-bottom: 55px;
+    }
+
+    .athlets .article 
+
+    .article-number {
+        font-size: 18px;
+    }
+
+    .article-number::after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 4px;
+       
+    }
+
+    .article-title {
+        font-size: 23px;
+    }
+
+    .article-content {
+        font-size: 15px;
+    }
+    
+    .section-number {
+        font-size: 14px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .section-number-line {
+        width: 15px;
+        height: 4px;
     }
 
 
-}
-
-.footer .download-app {
-    padding-bottom: 260px;;
-}
 
 
 
 
 
 
-.main-logo-footer {
-    text-align: center;
-    padding-bottom: 50px;
+
 }

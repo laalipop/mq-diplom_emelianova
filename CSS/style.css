@@ -58,7 +58,7 @@ body {
     padding-bottom: calc(222*100vh/960);    
     padding-left: calc(193*100vh/960);
     padding-right: calc(193*100vh/960);
-    width: 1560px;
+    width: 81.25vw;
     margin: 0 auto;    
 
     text-transform: uppercase;
@@ -496,8 +496,8 @@ p {
         padding-top: 18.77vh;
         padding-bottom: 31.8vh;
         padding-left: 9.4vh;
-        padding-right: ;    
-        width: 595px;
+        padding-right: 8.86vh;    
+        width: 62.04vw;
     }
 
     .header-title-two {
@@ -673,7 +673,7 @@ p {
     }
 
     .header-title {
-        width: 260px;
+        width: 81.25vw;
         padding-top: 23.77vh;
         padding-bottom: 15.84vh;
         padding-left: 3.52vh;
@@ -842,6 +842,7 @@ p {
     .footer-download-bottom {
         padding: 99px 20px 76px;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .footer-logo-text {

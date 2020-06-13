@@ -17,12 +17,9 @@ body {
     font-family: "Open Sans", Andale Mono, monospace;
   }
 
- /* .header-picture {
-    position: relative;
-    object-fit: cover;
-  }*/
-
 .header {
+    width: 100%;
+    height: 100vh;
     background-color: #000000;
     background-image: url("../images/football_1920.jpg");
     background-repeat: no-repeat;
@@ -48,7 +45,7 @@ body {
 
 .main-logo-header {
     text-align: center;
-    padding: 65px 0;
+    padding-top: 65px;
 }
 
 .main-logo-text {
@@ -57,30 +54,26 @@ body {
 }
 
 .header-title {
-    padding-top: 230px;
-    padding-bottom: 220px;    
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: calc(295*100vh/960);
+    padding-bottom: calc(222*100vh/960);    
+    padding-left: calc(193*100vh/960);
+    padding-right: calc(193*100vh/960);
     width: 1560px;
     margin: 0 auto;    
 
     text-transform: uppercase;
     color: #ffffff;
     
-    font-size: 90px;
+    font-size: calc(3.25vw + 17.6px);
     font-weight: 700;
-    line-height: 100px;
-}
-
-.header-title-two {
-    text-align: right;
-    display: block;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
 }
 
 .download-app {
     display: flex;
     justify-content: center;
-    padding-bottom: 110px;    
+    padding-bottom: calc(110*100vh/960);    
 }
 
 .link {
@@ -157,9 +150,12 @@ body {
     z-index: 2;
 }
 
-@media (min-width: 1920px) {
-
+@media (min-width: 1920px) { 
     
+    .header-title-two {
+        text-align: right;
+        display: block;
+    }
 
     .athlets .section-title {
     padding-left: 1000px;
@@ -188,10 +184,7 @@ body {
         left: 804px;
         z-index: 2;
     }
-
-
 }
-
 
 .athlets .articles .article:nth-child(3n+2)::after { 
     content: "";
@@ -273,8 +266,6 @@ p {
     margin: 0;
 }
 
-
-
 .players .articles .article:nth-child(2n+2)::after {
     content: "";
     position: absolute;
@@ -317,8 +308,7 @@ p {
     
     .section-pictures {
         width: 50%;
-    }
-    
+    }    
 }
 
 .picture {
@@ -362,9 +352,7 @@ p {
     background-color: #ffffff;
     border-radius: 2.0px;
     margin-top: 9px;
-}
-
- 
+} 
 
 @media (min-width: 1920px) {    
 
@@ -402,12 +390,11 @@ p {
     margin-top: 0;
 }
 
-
-
-
 /* _____footer___________________________________________________________________________________*/
 
 .footer {
+    width: 100%;
+    height: 100vh;
     background-color: #6d6b6b;
     background-image: url("../images/game_1920.jpg");
     background-repeat: no-repeat;
@@ -432,36 +419,33 @@ p {
 }
 
 .footer-download-bottom {
-    padding-top: 230px;
-    padding-bottom: 150px;    
     margin: 0 auto;
-    
-    
+    display: flex;
 }
 
 .footer-logo {
-    width: 100px;
-    height: 85px; 
-    padding: 20px 13px;
     position: relative;
     background-color: #5e42b0;  
-    border-radius: 25px; 
+    border-radius: 25px;
+    width: 105px;
+    height: 85px; 
+    padding: 25px 13px;
 }
+
 
 @media (min-width: 1920px) {
 
-    .footer-logo {
-        margin-right: 35px;
-    }
-
-    .footer-logo-text {
-    margin-left: 37px;
-    display: flex;
-    flex-wrap: wrap;
-    }
-
     .footer-download-bottom {
-        width: 866px;
+        padding-top: 230px;
+        padding-bottom: 150px;    
+        width: 870px;          
+    } 
+    
+    .footer-logo-text {
+        margin-left: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
 }
@@ -486,13 +470,10 @@ p {
     padding-bottom: 260px;;
 }
 
-
-
 .main-logo-footer {
     text-align: center;
     padding-bottom: 50px;
 }
-
 
 /*___================================================================____*/
 
@@ -503,7 +484,7 @@ p {
     }
 
     .main-logo-header {
-        padding: 40px 0;
+        padding-top: 40px;
     }
 
     .main-logo-text {
@@ -512,9 +493,10 @@ p {
     }
 
     .header-title {
-        padding: 180px 0 305px 0;
-        font-size: 64px;
-       
+        padding-top: 18.77vh;
+        padding-bottom: 31.8vh;
+        padding-left: 9.4vh;
+        padding-right: ;    
         width: 595px;
     }
 
@@ -523,10 +505,10 @@ p {
         display: block;
     }
     .download-app {
-        padding-bottom: 55px;    
+        padding-bottom: 55px;        
     }
 
-    .download-app-store, .download-app-googleplay {
+    .download-description {
         box-shadow: 8px 14px 24px 0px #0a0e34;
     }
 
@@ -551,8 +533,6 @@ p {
         position: relative;
         overflow: hidden;
     }
-
-
 
     .athlets .section-picture {
         content: "";
@@ -629,9 +609,17 @@ p {
         margin-top: 90px;
     }
 
+    .footer {
+        background-color: #6d6b6b;
+        background-image: url("../images/game_1280.jpg");
+    }
+
     .footer-download-bottom {
         padding: 125px 35px 285px;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
     }
 
     .footer-logo-text {
@@ -670,10 +658,6 @@ p {
 
 @media (max-width: 767px) {
 
-    html {
-        font-size: 62.5%;
-    }
-
     .header {
         background-image: url("../images/football_767.jpg");
     }
@@ -689,26 +673,22 @@ p {
     }
 
     .header-title {
-        font-size: 28px;
-        line-height: 1.2;
         width: 260px;
-        padding-top: 135px;
-        padding-bottom: 90px;
-        padding-left: 20px;
-        padding-right: 45px;
+        padding-top: 23.77vh;
+        padding-bottom: 15.84vh;
+        padding-left: 3.52vh;
+        padding-right: 7.92vh;
     }
 
     .header-title-two {
-        text-align: start;
-        padding-left: 44px;
-        padding-top: 30px;
+        display: inline-block;
+        padding-left: 44px;        
     }
 
     .download-app {
         flex-wrap: wrap;
         width: 280px;
         margin: 0 auto;
-
     }
 
     .download-description {
@@ -721,8 +701,7 @@ p {
     
     .download-description:nth-child(2) {
         margin-top: 14px;
-        margin-left: 0;   
-             
+        margin-left: 0;                
     }
 
     .app-store-svg  {
@@ -734,9 +713,9 @@ p {
     .app-googleplay-svg {
         width: 22px;
         height: 24px;
-        margin-right: 7px;
-        
+        margin-right: 7px;        
     }
+
     .section-container {
         margin-top: 0;
     }
@@ -765,11 +744,9 @@ p {
     .article {
         padding-bottom: 55px;
     }
-
    
     .article-number {
-        font-size: 14px;
-        
+        font-size: 14px;        
     }
 
     .article-number::after {
@@ -847,8 +824,7 @@ p {
         padding-bottom: 78px;
     }
 
-    .section-text:last-child {
-        
+    .section-text:last-child {        
         padding-bottom: 67px;
     }
 
@@ -900,6 +876,11 @@ p {
 
     .footer .main-logo-footer {
         padding-bottom: 10px;
+    }
+
+    .footer {
+        background-color: #6d6b6b;
+        background-image: url("../images/game_767.jpg");
     }
 
 }

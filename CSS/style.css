@@ -1,889 +1,871 @@
 @font-face {
-    font-family: "Open Sans";
-    src: url(../fonts/OpenSans-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Open Sans";
-    src: url(../fonts/OpenSans-Bold.woff);
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
 
 body {
-    margin: 0;
-    font-family: "Open Sans", Andale Mono, monospace;
-  }
+  margin: 0;
+  font-family: "Open Sans", Andale Mono, monospace;
+}
 
 .header {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #000000;
-    background-image: url("../images/football_1920.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  min-height: 100vh;
+  background-color: #000000;
+  background-image: url("../images/football_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .header::after {
-    content: "";
-    position: absolute;
-    background-color: #0a0e34;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.9;
+  content: "";
+  position: absolute;
+  background-color: #0a0e34;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
 }
 
 .header-container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .main-logo-header {
-    text-align: center;
-    padding-top: 65px;
+  text-align: center;
+  padding-top: calc(65 * 100vh / 960);
 }
 
 .main-logo-text {
-    width: 191px;
-    height: 52px;
+  width: 191px;
+  height: 52px;
 }
 
 .header-title {
-    padding-top: calc(295*100vh/960);
-    padding-bottom: calc(222*100vh/960);    
-    padding-left: calc(193*100vh/960);
-    padding-right: calc(193*100vh/960);
-    width: 81.25vw;
-    margin: 0 auto;    
+  padding-top: calc(295 * 100vh / 960);
+  padding-bottom: calc(222 * 100vh / 960);
+  padding-left: calc(193 * 100vw / 1920);
+  padding-right: calc(193 * 100vw / 1920);
+  margin: 0 auto;
 
-    text-transform: uppercase;
-    color: #ffffff;
-    
-    font-size: calc(3.25vw + 17.6px);
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  font-size: calc(3.25vw + 17.6px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
 }
 
 .download-app {
-    display: flex;
-    justify-content: center;
-    padding-bottom: calc(110*100vh/960);    
+  display: flex;
+  justify-content: center;
+  padding-bottom: calc(110 * 100vh / 960);
 }
 
 .link {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
-.download-description {    
-    font-weight: 400;
-    font-size: 14px;
-    color: #ffffff;
-    text-transform: uppercase; 
-    width: 310px;
-    height: 77px;
-    background-color: #5e42b0;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.download-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 310px;
+  height: 77px;
+  background-color: #5e42b0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .download-description:nth-child(2) {
-    margin-left: 50px;
+  margin-left: calc(50 * 100vw / 1920);
 }
 
 .app-store-svg {
-    width: 42px;
-    height: 48px;
-    margin-right: 25px;
+  width: 42px;
+  height: 48px;
+  margin-right: 25px;
 }
 
 .app-googleplay-svg {
-    width: 40px;
-    height: 50px;
-    margin-right: 30px;
+  width: 40px;
+  height: 50px;
+  margin-right: 30px;
 }
-
-/* ________________________________________________________________________________________*/
 
 .section-part {
-    width: 1920px;
-    margin: 0 auto;
-}
-
-.section-container {
-    margin-top: 115px;
-    position: relative;    
+  margin: 0 auto;
 }
 
 .section-title {
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 60px;
-    color: #e7e7e7;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 50px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
+
 .article {
-    padding-top: 60px;
-    padding-bottom: 50px;    
+  padding-top: 60px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+@media (min-width: 961px) {
+  .section-title {
+    margin-top: 115px;
+  }
+
+  .section-container {
     position: relative;
-}
+  }
 
-.athlets .section-picture {
+  .athlets .section-picture {
     content: "";
     position: absolute;
-    top: -88px;
-    right: 0;
-    bottom: 0;
-    left: 390px; 
     z-index: 2;
-}
+    top: -88px;
+    left: calc(50vw - 566px);
+  }
 
-@media (min-width: 1920px) { 
-    
-    .header-title-two {
-        text-align: right;
-        display: block;
-    }
+  .header-title-two {
+    text-align: right;
+    display: block;
+  }
 
-    .athlets .section-title {
+  /* .athlets .section-title {
     padding-left: 1000px;
-    }   
+  } */
 
-    .athlets .article {
-    padding-left: 1000px;
-    padding-right: 210px;
-    }
+  .athlets .article,
+  .athlets .section-title {
+    padding-left: 52.08vw;
+    padding-right: calc(210 * 100vw / 1920);
+  }
 
-    .players .section-title {
-        padding-left: 190px;
-    }
-    
-    .players .article {
-        padding-left: 190px;
-        padding-right: 985px;
-    }
-    
-    .players .section-picture {
-        content: "";
-        position: absolute;
-        top: -94px;
-        right: 0;
-        bottom: 0;
-        left: 804px;
-        z-index: 2;
-    }
-}
+  /* .players .section-title {
+    padding-left: 190px;
+  } */
 
-.athlets .articles .article:nth-child(3n+2)::after { 
+  .players .article,
+  .players .section-title {
+    padding-left: calc(190 * 100vw / 1920);
+    padding-right: calc(985 * 100vw / 1920);
+  }
+
+  .players .section-picture {
     content: "";
     position: absolute;
-    background-color: #5e42b0;
-    opacity: 0.05;
-    top: 0;
+    top: -94px;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: calc(804 * 100vw / 1920);
+    z-index: 2;
+    overflow: hidden;
+  }
 }
 
-.athlets .articles .article:nth-child(3n+3)::after {
-    content: "";
-    position: absolute;
-    background-color: #5e42b0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;    
+.athlets .articles .article:nth-child(3n + 2)::after {
+  content: "";
+  position: absolute;
+  background-color: #5e42b0;
+  opacity: 0.05;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.athlets .articles .article:nth-child(3n + 3)::after {
+  content: "";
+  position: absolute;
+  background-color: #5e42b0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .article-container {
-    position: relative;
-    z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 
 .article-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .article-number {
-    font-size: 18px;
-    font-weight: 700;
-    color: #000000;
-    padding-right: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  padding-right: 12px;
 }
 
 .article-number::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 5px;
-    background-color: #5e42b0;
-    border-radius: 50px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background-color: #5e42b0;
+  border-radius: 50px;
 }
 
-.athlets .articles .article:nth-child(3n+3) .article-number::after,
-.players .articles .article:nth-child(3n+3) .article-number::after  {
-    background-color: #ffffff;
+.athlets .articles .article:nth-child(3n + 3) .article-number::after,
+.players .articles .article:nth-child(3n + 3) .article-number::after {
+  background-color: #ffffff;
 }
 
 .article-title {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 34px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #c1c1c1;    
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #c1c1c1;
 }
 
 .article-content {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    color: #000000;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
 
-.athlets .articles .article:nth-child(3n+3) .article-content,
-.players .articles .article:nth-child(3n+3) .article-content {
-    color: #ffffff;
+.athlets .articles .article:nth-child(3n + 3) .article-content,
+.players .articles .article:nth-child(3n + 3) .article-content {
+  color: #ffffff;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
-.players .articles .article:nth-child(2n+2)::after {
-    content: "";
-    position: absolute;
-    background-color: #0a0e34;
-    opacity: 0.03;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.players .articles .article:nth-child(2n + 2)::after {
+  content: "";
+  position: absolute;
+  background-color: #0a0e34;
+  opacity: 0.03;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.players .articles .article:nth-child(2n+3)::after {
-    content: "";
-    position: absolute;
-    background-color: #0a0e34;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.players .articles .article:nth-child(2n + 3)::after {
+  content: "";
+  position: absolute;
+  background-color: #0a0e34;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.players .articles .article:nth-child(2n+3) .article-number {
-    color: #9173e6;
+.players .articles .article:nth-child(2n + 3) .article-number {
+  color: #9173e6;
 }
 
 /* ***************************************************************************** */
-.section {
-    position: relative;
+.section-pictures {
+  position: relative;
+  background-color: #c1c1c1;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 961px) {
+  .section {
+    display: flex;
+  }
 
-    .section {
-        display: flex;
-    }
+  .find-contact .section-pictures {
+    order: 3;
+  }
 
-    .find-contact .section-pictures {
-        order: 3;
-    }
-    
-    .section-pictures {
-        width: 50%;
-    }    
+  .section-pictures {
+    width: 50%;
+  }
+
+  .find-contact .section-number {
+    left: calc(0% - (168 * 100vw / 1920 / 2));
+  }
+
+  .find-contact .section-text {
+    padding-left: calc(192 * 100vw / 1920);
+  }
 }
 
-.picture {
-    max-width: 100%;
-    display: block;
-    position: relative;
+.picture-img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
 }
 
 .section-number {
-    font-size: 24px;
-    line-height: 0.8;
-    font-weight: 700;
-    color: #f5f6f7;
-    background-color: #5e42b0;
-    width: 168px;
-    height: 155px;
-    display: block;
-        
-    position: absolute;
-    top: 211px;
-    left: 876px;
-    right: 0;
-    bottom: 0; 
+  font-size: 24px;
+  line-height: 0.8;
+  font-weight: 700;
+  color: #f5f6f7;
+  background-color: #5e42b0;
+
+  width: calc(168 * 100vw / 1920);
+  height: calc(155 * 100vw / 1920);
+  display: block;
+  position: absolute;
+  top: calc(50% - (155 * 100vw / 1920));
+  left: calc(100% - (168 * 100vw / 1920 / 2));
 }
 
 .section-number-line {
-    position: absolute;
-    top: 61px;
-    left: 70px;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  top: calc(155 * 100vw / 1920 / 2 - 13.7px);
+  left: calc(168 * 100vw / 1920 / 2 - 16.6px);
 }
 
 .section-number-line::after {
-    content: "";
-    display: block;
-    text-align: center;
-    width: 26px;
-    height: 5px;
-    opacity: 0.3;
-    background-color: #ffffff;
-    border-radius: 2.0px;
-    margin-top: 9px;
-} 
+  content: "";
+  display: block;
+  text-align: center;
+  width: 26px;
+  height: 5px;
+  opacity: 0.3;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-top: 9px;
+}
 
-@media (min-width: 1920px) {    
+@media (min-width: 961px) {
+  .section-text-description {
+    width: calc(640 * 100vw / 1920);
+  }
 
-    .section-text-description {
-        width: 640px;
-    }
-
-    .section-text {    
-        display: flex;
-        padding-left: 125px;
-        width: 50%;
-        box-sizing: border-box;
-        margin-top: 260px;
-    }
+  .section-text {
+    display: flex;
+    padding-left: calc(125 * 100vw / 1920);
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+  }
 }
 
 .section-name {
-    opacity: 0.4;
-    font-size: 80px;
-    line-height: 0.8;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #c1c1c1;
-    margin-top: 0;
-    margin-bottom: 110px;
-
+  opacity: 0.4;
+  font-size: calc(80 * 100vw / 1920);
+  line-height: 0.8;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  margin-top: 0;
+  margin-bottom: calc(110 * 100vw / 1920);
 }
 
 .section-content {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    color: #000000;
-    margin-top: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-top: 0;
 }
 
 /* _____footer___________________________________________________________________________________*/
 
 .footer {
-    width: 100%;
-    height: 100vh;
-    background-color: #6d6b6b;
-    background-image: url("../images/game_1920.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-color: #6d6b6b;
+  background-image: url("../images/game_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
 }
 
 .footer::after {
-    content: "";
-    position: absolute;
-    background-color: #0a0e34;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.9;
+  content: "";
+  position: absolute;
+  background-color: #0a0e34;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
 }
 
 .footer-container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-download-bottom {
-    margin: 0 auto;
-    display: flex;
+  margin: 0 auto;
+  display: flex;
 }
 
 .footer-logo {
-    position: relative;
-    background-color: #5e42b0;  
-    border-radius: 25px;
-    width: 105px;
-    height: 85px; 
-    padding: 25px 13px;
+  position: relative;
+  background-color: #5e42b0;
+  border-radius: 25px;
+  width: 105px;
+  height: 85px;
+  padding: 25px 13px;
 }
 
+@media (min-width: 961px) {
+  .footer-download-bottom {
+    padding-top: 23.95vh;
+    padding-bottom: 15.62vh;
+    width: 870px;
+  }
 
-@media (min-width: 1920px) {
+  .footer-logo-text {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-    .footer-download-bottom {
-        padding-top: 230px;
-        padding-bottom: 150px;    
-        width: 870px;          
-    } 
-    
-    .footer-logo-text {
-        margin-left: 35px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
+  .footer .download-app {
+    padding-bottom: 27.08vh;
+  }
 }
 
 .footer-logo-text-one {
-    font-size: 80px;
-    line-height: 60px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer-logo-text-two {
-    font-size: 30px;
-    line-height: 34px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #a496ca;
-}
-
-.footer .download-app {
-    padding-bottom: 260px;;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #a496ca;
 }
 
 .main-logo-footer {
-    text-align: center;
-    padding-bottom: 50px;
+  text-align: center;
+  padding-bottom: 5.2vh;
 }
 
 /*___================================================================____*/
 
-@media (min-width: 768px) and (max-width: 1919px) {
-    
-    .header {
-        background-image: url("../images/football_1280.jpg");
-    }
+@media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    background-image: url("../images/football_1280.jpg");
+  }
 
-    .main-logo-header {
-        padding-top: 40px;
-    }
+  .main-logo-header {
+    padding-top: 40px;
+  }
 
-    .main-logo-text {
-        width: 205px;
-        height: 56px;
-    }
+  .main-logo-text {
+    width: 205px;
+    height: 56px;
+  }
 
-    .header-title {
-        padding-top: 18.77vh;
-        padding-bottom: 31.8vh;
-        padding-left: 9.4vh;
-        padding-right: 8.86vh;    
-        width: 62.04vw;
-    }
+  .header-title {
+    padding-top: 18.77vh;
+    padding-bottom: 31.8vh;
+    padding-left: 9.4vh;
+    padding-right: 8.86vh;
+    width: 62.04vw;
+  }
 
-    .header-title-two {
-        padding-left: 100px;
-        display: block;
-    }
-    .download-app {
-        padding-bottom: 55px;        
-    }
+  .header-title-two {
+    padding-left: 100px;
+    display: block;
+  }
 
-    .download-description {
-        box-shadow: 8px 14px 24px 0px #0a0e34;
-    }
+  .footer .download-app {
+    padding-bottom: 5.73vh;
+  }
 
-    .app-store-svg {
-        width: 36px;
-        height: 42px;
-        margin-right: 28px;
-    }
+  .download-description {
+    box-shadow: 8px 14px 24px 0px #0a0e34;
+  }
 
-    .app-googleplay-svg {
-        width: 41px;
-        height: 45px;
-        margin-right: 28px;
-    }
+  .download-description:nth-child(2) {
+    margin-left: calc(50 * 100vw / 768);
+  }
 
-    .section-part {
-        width: 768px;
-    }
+  .app-store-svg {
+    width: 36px;
+    height: 42px;
+    margin-right: 28px;
+  }
 
-    .section-container {
-        margin-top: 85px;
-        position: relative;
-        overflow: hidden;
-    }
+  .app-googleplay-svg {
+    width: 41px;
+    height: 45px;
+    margin-right: 28px;
+  }
 
-    .athlets .section-picture {
-        content: "";
-        position: absolute;
-        top: 10px;
-        right: 0;
-        bottom: 0;
-        left: -162px;
-    }
+  .section-container {
+    padding-top: 85px;
+    position: relative;
+    overflow: hidden;
+  }
 
-    .section-title {
-        margin-bottom: 60px;
-    }
-    
-    .athlets .section-title {
-        padding-left: 290px;
-    }
+  .athlets .section-picture {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 94px;
+    left: -162px;
+  }
 
-    .athlets .article {
-        padding-left: 290px;
-        padding-right: 33px;
-    }
+  .section-title {
+    margin-bottom: 0;
+  }
 
-    .article-title {
-        font-size: 32px;
-    }
+  .athlets .section-title,
+  .athlets .article {
+    padding-left: 292px;
+    padding-right: 33px;
+  }
 
-    .article-content {
-        font-size: 16px;
-    }
+  .article-title {
+    font-size: 32px;
+  }
 
-    .players .section-title {
-        padding-left: 32px;
-    }
-    
-    .players .article {
-        padding-left: 32px;
-        padding-right: 310px;
-    }
-    
-    .players .section-picture {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 332px;
-        z-index: 2;
-    } 
+  .article-content {
+    font-size: 16px;
+  }
 
-    .section-number {
-        width: 116px;
-        height: 116px;
-        top: 504px;
-        left: 33px;
-        bottom: 0;
-        right: 0;
-    }   
+  .players .section-title,
+  .players .article {
+    padding-left: 32px;
+    padding-right: 310px;
+  }
 
-    .section-number-line {
-        top: 42px;
-        left: 44px;
-    } 
+  .players .section-picture {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 0;
+    z-index: 2;
+  }
 
-    .section-text { 
-        display: block;
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-bottom: 100px;
-        margin-top: 80px;
-    }
+  .section-number {
+    width: 116px;
+    height: 116px;
+    top: calc(100% - 88px);
+    left: calc(0% + 33px);
+    bottom: 0;
+    right: 0;
+  }
 
-    .be-active .section-text {   
-        margin-top: 90px;
-    }
+  .section-number-line {
+    top: 42px;
+    left: 44px;
+  }
 
-    .footer {
-        background-color: #6d6b6b;
-        background-image: url("../images/game_1280.jpg");
-    }
+  .section-text {
+    display: block;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 100px;
+    margin-top: 80px;
+  }
 
-    .footer-download-bottom {
-        padding: 125px 35px 285px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  .be-active .section-text {
+    margin-top: 90px;
+  }
 
-    }
+  .footer {
+    background-color: #6d6b6b;
+    background-image: url("../images/game_1280.jpg");
+  }
 
-    .footer-logo-text {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;        
-    }    
+  .footer-download-bottom {
+    padding: 13.03vh 3.65vh 29.72vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .footer-logo {
-        margin-bottom: 85px;
-    }
+  .footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
 
-    .footer-logo-text-one {
-        margin-bottom: 27px;
-    } 
+  .footer-logo {
+    margin-bottom: calc(80 * 100vw / 768);
+  }
 
-    .footer-logo-text-two {
-        font-size: 36px;
-    } 
+  .footer-logo-text-one {
+    margin-bottom: 27px;
+  }
 
+  .footer-logo-text-two {
+    font-size: 36px;
+  }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 960px) {
+  .athlets .articles .article:nth-child(3n + 2)::after,
+  .players .articles .article:nth-child(3n + 2)::after {
+    background-color: #f5f4f9;
+    opacity: 1;
+  }
 
-    .athlets .articles .article:nth-child(3n+2)::after,
-    .players .articles .article:nth-child(3n+2)::after { 
-        background-color: #f5f4f9;
-        opacity: 1;
-    }
-
-    .players .articles .article:nth-child(3n+3)::after { 
-        background-color: #090c35;
-    }
+  .players .articles .article:nth-child(3n + 3)::after {
+    background-color: #090c35;
+  }
 }
+/* ======================================================= */
+@media (max-width: 640px) {
+  .header {
+    background-image: url("../images/football_767.jpg");
+  }
 
-@media (max-width: 767px) {
+  .main-logo-header {
+    padding-top: 5.8vh;
+    padding-bottom: 0;
+  }
 
-    .header {
-        background-image: url("../images/football_767.jpg");
-    }
+  .main-logo-text {
+    width: 133px;
+    height: 36px;
+  }
 
-    .main-logo-header {
-        padding-top: 33px;
-        padding-bottom: 0;
-    }
+  .header-title {
+    padding-top: 23.77vh;
+    padding-bottom: 15.84vh;    
+    padding-left: calc(20 * 100vw / 320);
+    padding-right: calc(20 * 100vw / 320);
+  }
 
-    .main-logo-text {
-        width: 133px;
-        height: 36px;        
-    }
+  .header-title-two {
+    display: block;
+    padding-left: 12.22vw;
+  }
 
-    .header-title {
-        width: 81.25vw;
-        padding-top: 23.77vh;
-        padding-bottom: 15.84vh;
-        padding-left: 3.52vh;
-        padding-right: 7.92vh;
-    }
+  .download-app {
+    flex-wrap: wrap;
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: calc(110 * 100vh / 568);
+  }
 
-    .header-title-two {
-        display: inline-block;
-        padding-left: 44px;        
-    }
+  .download-description {
+    height: 35px;
+    font-size: 8px;
+    padding-left: 82px;
+    box-sizing: border-box;
+    justify-content: start;
+  }
 
-    .download-app {
-        flex-wrap: wrap;
-        width: 280px;
-        margin: 0 auto;
-    }
+  .download-description:nth-child(2) {
+    margin-top: 14px;
+    margin-left: 0;
+  }
 
-    .download-description {
-        height: 35px;
-        font-size: 8px;
-        padding-left: 82px;
-        box-sizing: border-box;
-        justify-content: start;
-    }
-    
-    .download-description:nth-child(2) {
-        margin-top: 14px;
-        margin-left: 0;                
-    }
+  .app-store-svg {
+    width: 20px;
+    height: 24px;
+    margin-right: 10px;
+  }
 
-    .app-store-svg  {
-        width: 20px;
-        height: 24px;
-        margin-right: 10px;
-    }
+  .app-googleplay-svg {
+    width: 22px;
+    height: 24px;
+    margin-right: 7px;
+  }
 
-    .app-googleplay-svg {
-        width: 22px;
-        height: 24px;
-        margin-right: 7px;        
-    }
+  .section-container {
+    margin-top: 0;
+  }
 
-    .section-container {
-        margin-top: 0;
-    }
+  .section-title {
+    font-size: 50px;
+    line-height: 0.8;
+    padding-top: calc(25 * 100vh / 568);
+    padding-bottom: calc(20 * 100vh / 568);
+    padding-left: calc(20 * 100vw / 320);
+    margin-bottom: 0;
+  }
 
-    .section-part {
-        width: 320px;
-         /*320px*/
-    }
+  .athlets .section-picture {
+    display: block;
+    width: 191px;
+    height: 281px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
 
-    .section-title {
-        font-size: 50px;
-        line-height: 0.8;
-        padding-top: 25px;
-        padding-bottom: 245px;
-        padding-left: 20px;
-        margin-bottom: 0;
-    }
+  .article {
+    padding-bottom: 55px;
+  }
 
-    .athlets .section-picture {  
-        top: 80px;
-        left: 70px;
-        right: 0;
-        bottom: 0;             
-    }
+  .article-number {
+    font-size: 14px;
+  }
 
-    .article {
-        padding-bottom: 55px;
-    }
-   
-    .article-number {
-        font-size: 14px;        
-    }
+  .article-number::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 4px;
+  }
 
-    .article-number::after {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 4px;       
-    }
+  .article-title {
+    font-size: 23px;
+    line-height: 0.8;
+  }
 
-    .article-title {
-        font-size: 23px;
-        line-height: 0.8;
-    } 
+  .article-content {
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-    .article-content {
-        font-size: 15px;
-        line-height: 18px;
-    }
+  .article:first-child {
+    padding-top: 83px;
+    margin-top: -55px;
+  }
 
-    .article:first-child {
-        padding-top: 83px;
-    }
-    
-    .article, .section-text {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .article,
+  .section-text {
+    padding-left: calc(20 * 100vw / 320);
+    padding-right: calc(20 * 100vw / 320);
+  }
 
-    .athlets .articles .article:nth-child(3n+1)::after,
-    .players .articles .article:nth-child(3n+1)::after { 
-        content: "";
-        position: absolute;
-        background-color: #fafafa;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }    
+  .athlets .articles .article:nth-child(3n + 1)::after,
+  .players .articles .article:nth-child(3n + 1)::after {
+    content: "";
+    position: absolute;
+    background-color: #fafafa;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
-    .section-number {
-        font-size: 14px;
-        top: 293px;
-        left: 20px;
-        bottom: 0;
-        right: 0;
-        width: 70px;
-        height: 70px;
-    }
+  .section-number {
+    font-size: 14px;
+    top: calc(100% - 58px);
+    left: calc(0% + 20px);
+    width: 70px;
+    height: 70px;
+  }
 
-    .section-number-line {
-        top: 27px;
-        left: 27px;
-        right: 0;
-        bottom: 0;
-    }
+  .section-number-line {
+    top: 27px;
+    left: 27px;
+  }
 
-    .section-number-line::after {
-        width: 15px;
-        height: 4px;
-        margin-top: 5px;
-    }
+  .section-number-line::after {
+    width: 15px;
+    height: 4px;
+    margin-top: 5px;
+  }
 
-    .players .section-picture {           
-        content: "";
-        position: absolute;
-        z-index: 2;
-        top: 80px;
-        left: 9px;
-        right: 0;
-        bottom: 0;           
-    }
+  .players .section-picture {
+    display: block;
+    width: 302px;
+    height: 248px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
 
-    .section-text {
-        margin-top: 36px;
-        padding-bottom: 78px;
-    }
+  .players .article:first-child {
+    margin-top: -25px;
+  }
 
-    .section-text:last-child {        
-        padding-bottom: 67px;
-    }
+  .section-text {
+    margin-top: 36px;
+    padding-bottom: 78px;
+  }
 
-    .section-name {
-        font-size: 28px;
-        opacity: 1;
-        margin-bottom: 23px;
-    }
+  .section-text:last-child {
+    padding-bottom: 67px;
+  }
 
-    .section-content {
-        font-size: 16px;
-        line-height: 20px;        
-    }
+  .section-name {
+    font-size: 28px;
+    opacity: 1;
+    margin-bottom: 23px;
+  }
 
-    .footer-download-bottom {
-        padding: 99px 20px 76px;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: column;    
-    }
+  .section-content {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-    .footer-logo-text {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;        
-    }    
+  .footer-download-bottom {
+    padding: 17.42vh 3.52vh 13.38vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .footer-logo {
-        width: 60px;
-        height: 50px;
-        padding: 12px 6px;
-        margin-bottom: 59px;
-        border-radius: 15px;
-    }
+  .footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-    .footer-logo-text-one {
-        font-size: 32px;
-        margin-bottom: 13px;
-        line-height: 0.8;
-    } 
+  .footer-logo {
+    width: 60px;
+    height: 50px;
+    padding: 12px 6px;
+    margin-bottom: 59px;
+    border-radius: 15px;
+  }
 
-    .footer-logo-text-two {
-        font-size: 14px;
-        line-height: 0.8;
-    } 
+  .footer-logo-text-one {
+    font-size: 32px;
+    margin-bottom: 13px;
+    line-height: 0.8;
+  }
 
-    .footer .download-app {
-        padding-bottom: 82px;
-    }
+  .footer-logo-text-two {
+    font-size: 14px;
+    line-height: 0.8;
+  }
 
-    .footer .main-logo-footer {
-        padding-bottom: 10px;
-    }
+  .footer .download-app {
+    padding-bottom: 14.44vh;
+  }
 
-    .footer {
-        background-color: #6d6b6b;
-        background-image: url("../images/game_767.jpg");
-    }
+  .footer .main-logo-footer {
+    padding-bottom: 1.76vh;
+  }
 
+  .footer {
+    background-image: url("../images/game_767.jpg");
+  }
 }
